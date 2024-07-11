@@ -1,0 +1,46 @@
+%%
+%% Berliner Hochschule für Technik -- Final thesis
+%%
+%% Title pages and explanations 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\typeout{BHT-Abschlussarbeit V2.0 26.08.21 S.Tschirley}
+
+%\begin{document}
+
+\maketitle
+\clearpage
+
+% Back page (empty)
+~ % Use a tilde for a non-breaking space to create an empty page
+\newpage
+
+\input{abstract_en.tex}
+\clearpage
+
+\ifthenelse{\boolean{@entwurfset}}{}{
+    ~
+    \newpage
+    \vfill
+    \section*{Task sheet -- replace with original !!!}
+    \vfill
+    \clearpage
+    ~
+    \newpage
+}
+
+\vspace{10ex}
+\section*{Declaration}
+I hereby declare that I have written this thesis independently and without external help, and have only used the sources and aids indicated. Passages taken literally or in substance from other works are marked with a citation of the source.
+\vspace{10ex}\\
+
+\hrule
+{\small{Date}}\hfill{\small{Signature}}
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+
+
+%\end{document}
